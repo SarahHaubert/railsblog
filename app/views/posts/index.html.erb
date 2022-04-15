@@ -1,14 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1 style="font-family: Lato" class="p-2">Trails</h1>
+
+
+
 
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+    <p><%= button_to "See Conditions", post, class: "btn btn-primary" %></p>
+    </div>
+    <div class="col">
+  <%=image_tag(post.pictures.first, style: "width: 200px; height: 200px")%>
+   
+  
+  </div>
+</div>
+</div>
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "New trail", new_post_path %>

@@ -1,12 +1,28 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
+<div id="<%= dom_id post %>" class="container">
+  
+    <div class="row">
+    <div class="col">
+    <div class="card" style="width: 36rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %> 
+    
+    <% if post.activity == "run" %>
+    <%= image_tag("run.png") %>
+    <% elsif post.activity == "ski" %>
+    <%= image_tag("ski.png") %>
+    <% else %>
+    <%= image_tag("run.png") %>
+    <%= image_tag("ski.png") %>
+    <% end %>
+    </h5>
 
-  <p>
-    <strong>Body:</strong>
-    <%= post.body %>
-  </p>
-
+    <p class="card-text"> <%= post.body %></p>
+   
+  
 </div>
+    
+        
+   
+  </div>
+  
+
