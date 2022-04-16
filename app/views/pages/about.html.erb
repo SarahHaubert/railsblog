@@ -1,4 +1,33 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<h5 style="font-family: Lato">Ouray's tight spot nestled right up against cliffs that rise 5,000-6,000 feet above the town reuslts in a unique combination of extreme weather and temperature inversion that wreaks havoc on trail conditions, even when compared against other mtn towns. Here you'll find the latest updates on trail conditions! </h5>
 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <%= image_tag("tp.jpg", class: "d-block w-100") %>
+      
+    </div>
+    <div class="carousel-item">
+    <%= image_tag("ip.jpg", class: "d-block w-100") %>
+      
+    </div>
+    <div class="carousel-item">
+    <%= image_tag("abrams.jpg", class: "d-block w-100") %>
+     
+    </div>
+    
+    <div class="carousel-item">
+    <%= image_tag("weehawken.jpg", class: "d-block w-100") %>
+     
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<p class="text-muted">Photography by Sarah Haubert</p>
 <%= link_to "Home", root_path %>

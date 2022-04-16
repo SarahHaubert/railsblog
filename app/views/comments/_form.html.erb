@@ -1,12 +1,12 @@
 
-<div class="card">
+
+
+
 <%= form_with(model: [post, post.comments.build]) do |f| %>
-    <div class="form-control">
+    <div class="form-control p-4">
         <h6>Make a conditions report:</h6>
         <%= f.text_area :body, cols: 100, rows: 2 %> <br>
         <%= f.submit "Update Conditions", class: "btn btn-primary mt-1"%>
     </div>
     
 <% end %>
-
-</div>

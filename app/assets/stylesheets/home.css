@@ -1,0 +1,23 @@
+.homepage {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), 
+        url('tp.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+
+.nav-link:active {
+    color: white;
+    border-bottom-color: white;
+}
+
+.btn-lg, .btn-lg:hover {
+    color: #333; 
+    text-shadow: none;
+}

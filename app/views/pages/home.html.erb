@@ -1,7 +1,29 @@
-<div class="container">
-    <h1>My Blog</h1>
-    <p>You can read more about me or check out my blog</p>
 
-<%= link_to "About Me", about_path, class: "btn btn-secondary" %>
-<%= link_to "Posts", posts_path, class: "btn btn-primary" %>
-</div>
+
+    
+<body class="homepage">
+    
+
+
+<div class="d-flex text-center text-light bg-transparent">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    
+                    
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+            
+            <p class="lead">Welcome to Ouray Trail Conditions! <br> Our unique position up against the cliffs makes for unusually predictable weather + a temperature inversion. <br> Find trail conditions or update them!</p>
+            <%= link_to "Trails", posts_path, class: "btn btn-lg btn-secondary font-weight-bold text-light", style: "background-color: #00bfff" %>
+        </main>
+        
+
+    </div>
+   </div> 
+</body>
