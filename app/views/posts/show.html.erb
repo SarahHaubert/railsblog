@@ -4,9 +4,9 @@
 <%= render @post %>
 </div>
 <div class="col">
-<% @post.pictures.each do |picture| %>
-  <%= link_to image_tag(picture, style: "width: 200px; height: 200px"), picture%>
-  <%end%>
+
+  <%=image_tag @post.pip%>
+ 
 </div>
  
 </div>

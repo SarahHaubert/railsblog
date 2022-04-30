@@ -11,7 +11,11 @@
     <p><%= link_to "See Conditions", post, class: "btn btn-primary" %></p>
     </div>
     <div class="col">
-  <%=image_tag(post.pictures.first, style: "width: 200px; height: 200px")%>
+    <%if post.pip %>
+    <%= image_tag post.pip, style: "width: 200px; height: 200px" %>
+    <% end %>
+    
+    
    
   
   </div>
